@@ -21,7 +21,7 @@ import {
   LocationTimeTextSmall
 } from "./styles";
 
-Geocoder.init("AIzaSyB1O8amubeMkw_7ok2jUhtVj9IkME9K8sc");
+Geocoder.init("AIzaSyAYVW-XnQUGZAUwa6ds4lCarzkHcSZwyik");
 
 export default class Map extends Component {
   state = {
@@ -41,8 +41,8 @@ export default class Map extends Component {
         this.setState({
           location,
           region: {
-            latitude,
-            longitude,
+            latitude:0,
+            longitude:0,
             latitudeDelta: 0.0143,
             longitudeDelta: 0.0134
           }
@@ -64,8 +64,8 @@ export default class Map extends Component {
 
     this.setState({
       destination: {
-        latitude,
-        longitude,
+        latitude:0,
+        longitude:0,
         title: data.structured_formatting.main_text
       }
     });
