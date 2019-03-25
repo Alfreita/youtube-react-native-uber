@@ -41,8 +41,8 @@ export default class Map extends Component {
         this.setState({
           location,
           region: {
-            latitude:0,
-            longitude:0,
+            latitude,
+            longitude,
             latitudeDelta: 0.0143,
             longitudeDelta: 0.0134
           }
@@ -64,8 +64,8 @@ export default class Map extends Component {
 
     this.setState({
       destination: {
-        latitude:0,
-        longitude:0,
+        latitude,
+        longitude,
         title: data.structured_formatting.main_text
       }
     });
